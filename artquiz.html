@@ -1,96 +1,96 @@
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
-		<meta http-equiv-"content-type" charset="Shift-JIS">
+		<meta http-equiv-"content-type" charset="UTF-8">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type = "text/javascript" src="./art.js"></script>
 		<link rel="stylesheet" href="artstyle.css">
-		<title>���܂�ǂ��Ԃ̐X �G��E�����N�C�Y</title>
+		<title>あつまれどうぶつの森 絵画・彫刻クイズ</title>
 	</head>
 	<body bgcolor="#f0f8ff">
-		<h1>���܂�ǂ��Ԃ̐X �G��E�����N�C�Y</h1>
+		<h1>あつまれどうぶつの森 絵画・彫刻クイズ</h1>
 		<p>
-		���܂�ǂ��Ԃ̐X�ɏo�Ă���u�Z�Z�Ȃ߂����v�u�����Ȓ����v�̌��l�^�𓚂���N�C�Y�ł��B<br>
-		��i���𓚂�����ƍ�҂𓚂����肪����܂��B
-		�ŏ��Ƀ��[�e�[�V���������߁A���Ԃɍ�i���w�肵�āA�����Ă����Ă��炢�܂��B<br>
-		���_�E���_�̌v�Z���@�͉��L�̒ʂ�ł��B
+		あつまれどうぶつの森に出てくる「〇〇なめいが」「○○な彫刻」の元ネタを答えるクイズです。<br>
+		作品名を答える問題と作者を答える問題があります。
+		最初にローテーションを決め、順番に作品を指定して、答えていってもらいます。<br>
+		加点・減点の計算方法は下記の通りです。
 		</p>
 		<ul>
-			<li>�������w�肵����� �� +���̓_���~2�{</li>
-			<li>���̐l���w�肵����� �� +���̓_��</li>
-			<li>�~�ϑ[�u �� +2�_</li>
-			<li>�X���[ �� +0�_</li>
-			<li>�������w�肵�����Ō듚 �� -2�_</li>
-			<li>���̐l���w�肵�����Ō듚 �� -1�_</li>
+			<li>自分が指定した問題 → +問題の点数×2倍</li>
+			<li>他の人が指定した問題 → +問題の点数</li>
+			<li>救済措置 → +2点</li>
+			<li>スルー → +0点</li>
+			<li>自分が指定した問題で誤答 → -2点</li>
+			<li>他の人が指定した問題で誤答 → -1点</li>
 		</ul>
 
 		<p>
-		��i�����N���b�N����ƍ�i�̉摜���\������܂��B
-		���̐��b��ɖ�蕶��ǂݏグ�܂��̂ł��������������B
-		�������킩��Ȃ��ꍇ�́A��l3��܂Łu�~�ϑ[�u�v���g�����Ƃ��ł��܂��B
-		�~�ϑ[�u���g����͖̂����w�肵���l�݂̂ł��B
+		作品名をクリックすると作品の画像が表示されます。
+		その数秒後に問題文を読み上げますのでお答えください。
+		もしもわからない場合は、一人3回まで「救済措置」を使うことができます。
+		救済措置を使えるのは問題を指定した人のみです。
 		</p>
 
 		<div id="test"></div>
 
-		<h2><span class="red">��i��</span>�𓚂���</h2>
-		<h3 class="p1">1�_�̖��</h3>
+		<h2><span class="red">作品名</span>を答える</h2>
+		<h3 class="p1">1点の問題</h3>
 		<ol class="p1">
-			<li class="p1">�������܂�Ȃ�߂���</li>
-			<li>�����݂䂭�߂���</li>
-			<li id="aa">�䂤�߂��Ȃ߂���</li>
-			<li>���ɂ����̂��傤����</li>
-			<li>���̂̂ӂ̂��傤����</li>
+			<li class="p1">たぐいまれなるめいが</li>
+			<li>しずみゆくめいが</li>
+			<li id="aa">ゆうめいなめいが</li>
+			<li>いにしえのちょうこく</li>
+			<li>もののふのちょうこく</li>
 		</ol>
 			
-		<h3 class="p2">2�_�̖��</h3>
+		<h3 class="p2">2点の問題</h3>
 		<ol class="p2">
-			<li>�������߂���</li>
-			<li>�����������傤����</li>
-			<li>�Ă�����̂��傤����</li>
-			<li>�������Ȃ��傤����</li>
+			<li>すごいめいが</li>
+			<li>うつくしいちょうこく</li>
+			<li>てがかりのちょうこく</li>
+			<li>いだいなちょうこく</li>
 		</ol>
 
-		<h3 class="p3">3�_�̖��</h3>
+		<h3 class="p3">3点の問題</h3>
 		<ol class="p3">
-			<li>���������Ȃ߂���</li>
-			<li>�����̂���߂���</li>
-			<li>�����₩�Ȃ߂���</li>
-			<li>�Ȃ��߂����߂���</li>
-			<li>�����܂����߂���</li>
-			<li>����҂Ă��Ȃ��傤����</li>
-			<li>���������������傤����</li>
+			<li>おごそかなめいが</li>
+			<li>かちのあるめいが</li>
+			<li>おだやかなめいが</li>
+			<li>なぞめいためいが</li>
+			<li>いさましいめいが</li>
+			<li>しんぴてきなちょうこく</li>
+			<li>こうごうしいちょうこく</li>
 		</ol>
 
-		<h2><span class="red">���</span>�𓚂���</h2>
-		<h3 class="p1">1�_�̖��</h3>
+		<h2><span class="red">作者</span>を答える</h2>
+		<h3 class="p1">1点の問題</h3>
 		<ol class="p1">
-			<li>�A�J�f�~�b�N�Ȃ߂��� �����₩�Ȃ߂���</li>
-			<li>�܂������߂���</li>
-			<li>�����Ȃ߂���</li>
-			<li>�悭�݂�߂��� ������Â悢�߂���</li>
+			<li>アカデミックなめいが たおやかなめいが</li>
+			<li>またたくめいが</li>
+			<li>いきなめいが</li>
+			<li>よくみるめいが ちからづよいめいが</li>
 		</ol>
 		
-		<h3 class="p2">2�_�̖��</h3>
+		<h3 class="p2">2点の問題</h3>
 		<ol class="p2">
-			<li>���΂炵���߂���</li>
-			<li>���ꂢ�Ȃ߂���</li>
-			<li>�ɂ��₩�Ȃ߂��� �����߂���</li>
-			<li>���Ȃ₩�Ȃ߂���</li>
-			<li>�Ȃ��݂̂��邿�傤����</li>
-			<li>��肵�����傤����</li>
+			<li>すばらしいめいが</li>
+			<li>きれいなめいが</li>
+			<li>にぎやかなめいが いいめいが</li>
+			<li>しなやかなめいが</li>
+			<li>なじみのあるちょうこく</li>
+			<li>りりしいちょうこく</li>
 		</ol>
 		
-		<h3 class="p3">3�_�̖��</h3>
+		<h3 class="p3">3点の問題</h3>
 		<ol class="p3">
-			<li>���Ă��Ȃ߂��� ���������߂���</li>
-			<li>���Ȃ��Ȃ߂���</li>
-			<li>����Ԃ�߂���</li>
-			<li>���݂Ȃ߂���</li>
-			<li>�������񂶂̂߂���</li>
-			<li>�Ђ���̂߂���</li>
-			<li>�������낢�߂���</li>
-			<li>�݂��ƂȂ߂���</li>
+			<li>すてきなめいが おちついためいが</li>
+			<li>いなせなめいが</li>
+			<li>あらぶるめいが</li>
+			<li>ちみつなめいが</li>
+			<li>いいかんじのめいが</li>
+			<li>ひかりのめいが</li>
+			<li>おもしろいめいが</li>
+			<li>みごとなめいが</li>
 		</ol>
 	</body>
 </html>
