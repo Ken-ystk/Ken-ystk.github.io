@@ -1,0 +1,25 @@
+.p1{
+	color : black;
+}
+
+.p2{
+	font-family : "MS Gothic";
+	color : blue;
+}
+
+.p3{
+	font-family : "MS Mincho";
+	font-weight : bold;
+	color : #606000;
+}
+
+.red{
+	color : red;
+}
+
+li{
+	padding-top : 5px;
+	padding-bottom : 5px;
+}
+
+
